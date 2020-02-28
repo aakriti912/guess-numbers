@@ -6,9 +6,14 @@ public class GuessingGame {
         int userAnswer = 0;
         System.out.println("The correct guess would be " + computerNumber);
         int count = 1;
+//sunata hjur hamle agi  kun ho?tya lagata malai
         while (userAnswer != computerNumber)
         {
-            String response = JOptionPane.showInputDialog(null, 
+            if (count==5){
+                break;
+            }
+
+            String response = JOptionPane.showInputDialog(null,
                 "Enter a guess between 1 and 20", "Guessing Game", 3);
             userAnswer = Integer.parseInt(response);
             JOptionPane.showMessageDialog(null, ""+ determineGuess(userAnswer, computerNumber, count)); 
