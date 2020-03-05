@@ -6,7 +6,7 @@ public class GuessingGame {
         int userAnswer = 0;
         System.out.println("The correct guess would be " + computerNumber);
         int count = 1;
-//sunata hjur hamle agi  kun ho?tya lagata malai
+
         while (userAnswer != computerNumber)
         {
             if (count==5){
